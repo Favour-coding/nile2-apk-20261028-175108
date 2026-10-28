@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Login + Sync (Firebase) Shim -->
+  <script src="firebase-config.js"></script>
+  <script type="module" src="sync-shim.js"></script>
+</head><body>
+<h1 style="color:red">Red title</h1>
+<button onclick="this.textContent='JS works'">Tap me</button>
+<style>p{color:green}</style><p>Green text (style tag)</p>
+<p id="x">Script not run</p>
+<script>document.getElementById('x').textContent='Script tag works'</script>
+</body></html>
